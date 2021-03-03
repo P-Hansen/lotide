@@ -2,32 +2,32 @@
 function assertEqual(actual, expected) {
   if (actual === expected) {
     console.log(`${actual} === ${expected}`);
-    return true;
+    return true
   } else {
     console.log(`${actual} !== ${expected}`);
-    return false;
+    return false
   }
-}
+};
 
 function eqArray(array1, array2) {
   for (let i = 0; i < array1.length; i++) {
     if (!assertEqual(array1[i], array2[i])) {
       console.log(`\u26D4 \u26D4 \u26D4 Assertion Failed: ${array1} !== ${array2}`);
-      return false;
+      return false
     }
   }
   console.log(`\u26D4 \u26D4 \u26D4 Assertion Passed: ${array1} === ${array2}`);
-  return true;
+  return true
 }
 
 function without(source, itemsToRemove) {
   let newArray = [];
   for (let i = 0; i < source.length; i++) {
-    if (!itemsToRemove.includes(source[i])) {
-      newArray.push(source[i]);
-    }
+      if (!itemsToRemove.includes(source[i])) {
+        newArray.push(source[i]);
+      }
   }
-  return newArray;
+  return newArray
 }
 
 // TEST CODE
