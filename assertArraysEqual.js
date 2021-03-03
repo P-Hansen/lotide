@@ -21,13 +21,14 @@ function eqArray(array1, array2) {
 }
 
 // TEST CODE
+/*
 eqArray([1, 2, 3], [1, 2, 3]) // => true
 eqArray([1, 2, 3], [3, 2, 1]) // => false
 eqArray(["1", "2", "3"], ["1", "2", "3"]) // => true
 eqArray(["1", "2", "3"], ["1", "2", 3]) // => false
 
 assertEqual(eqArray([1, 2, 3], [1, 2, 3]), true); // => should PASS
-
+*/
 /*assertEqual(1, 1);
 assertEqual("identical", "identical");
 assertEqual("non identical", "not identical");
