@@ -8,7 +8,7 @@ const middle = function (array) {
     return array.slice(aLength - 1, aLength + 1)
   }
   else { //odd size
-    return array[((aLength / 2) - 0.5)]
+    return [array[((aLength / 2) - 0.5)]]
   }
 }
 
