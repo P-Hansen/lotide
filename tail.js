@@ -1,11 +1,4 @@
-// FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`\u2705 \u2705 \u2705 Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`\u26D4 \u26D4 \u26D4 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+const assertEqual = require('./assertEqual');
 
 const tail = function(array) {
   if ((array.length === 0) || (array.length === 1)) {
@@ -14,6 +7,8 @@ const tail = function(array) {
     return array.slice(1, array.length);
   }
 };
+
+module.exports = tail;
 
 // TEST CODE
 const words = ["Yo Yo", "Lighthouse", "Labs", "More", "words", "here"];
