@@ -11,4 +11,6 @@ const letterPositions = function (string) {
   return tally
 }
 
+module.exports = letterPositions;
+
 console.log(letterPositions("lighthouse in the house"));

@@ -20,4 +20,6 @@ const countLetters = function (string) {
   return tally
 }
 
+module.exports = countLetters;
+
 console.log(countLetters("lighthouse in the house"));

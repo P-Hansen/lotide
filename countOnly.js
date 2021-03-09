@@ -25,6 +25,8 @@ const countOnly = function (allItems, itemsToCount) {
   return tally
 }
 
+module.exports = countOnly;
+
 //test code
 const firstNames = [
   "Karl",

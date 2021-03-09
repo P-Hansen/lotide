@@ -12,3 +12,5 @@ function eqArray(array1, array2) {
 }
 
 module.exports = eqArray;
+
+module.exports = eqArray;
